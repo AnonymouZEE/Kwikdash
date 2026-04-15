@@ -25,7 +25,7 @@ import {
   DropdownMenuItem, 
   DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
@@ -92,7 +92,7 @@ const ContactButton = ({ contact, label, onClick }: ContactButtonProps) => (
 
 export default function App() {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('system');
+  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('dark');
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
 
@@ -178,10 +178,13 @@ export default function App() {
           </div>
           
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="rounded-full h-7 w-7">
-                <MoreVertical className="w-4 h-4" />
-              </Button>
+            <DropdownMenuTrigger
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "icon" }),
+                "rounded-full h-7 w-7"
+              )}
+            >
+              <MoreVertical className="w-4 h-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="rounded-xl">
               <DropdownMenuItem onClick={() => setTheme('light')} className="gap-2 text-xs">
