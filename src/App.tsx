@@ -169,8 +169,8 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen w-full bg-[#202124] flex justify-center items-center overflow-hidden p-1 sm:p-2">
-      <div className="w-[340px] h-[720px] bg-background rounded-[32px] relative shadow-[0_30px_60px_rgba(0,0,0,0.5)] border-[6px] border-black p-3 flex flex-col overflow-hidden font-sans transition-all duration-500">
+    <div className="h-dvh w-full bg-[#202124] flex justify-center items-center overflow-hidden p-1 sm:p-2">
+      <div className="w-full max-w-[340px] h-full max-h-[720px] bg-background rounded-[32px] relative shadow-[0_30px_60px_rgba(0,0,0,0.5)] border-[6px] border-black p-3 flex flex-col overflow-hidden font-sans transition-all duration-500">
         {/* Header */}
         <header className="flex justify-between items-center mb-2 shrink-0">
           <div className="text-xs font-semibold text-foreground">

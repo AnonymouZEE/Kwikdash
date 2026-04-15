@@ -1,0 +1,17 @@
+{
+  "name": "Kwikdash",
+  "short_name": "Kwikdash",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#202124",
+  "theme_color": "#202124",
+  "description": "Minimalist Dashboard for Quick Access",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/ios/512/owl.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
